@@ -4,31 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <nav>
+        <a href="#menu"></a>
+    </nav>
 </head>
 <body>
     <header id="header">
         <h1>Lipták Zsolt kályha- és kemenceépítő</h1>
     </header>
-    <nav id="menu">
-
+    <img src="images/szlovak_8.jpg" alt="Kemence">
+    <img src="images/ketegyhaza_6.jpg" alt="Kemence">
+        <nav id="menu">
+        <li>
+            <a href="/works.html">Munkáim</a>
+        </li>
+        <li>
+            <a href="/gallery.html">Képgaléria</a>
+        </li>
+        <li>
+            <a href="/about.html">Magamról</a>
+        </li>
     </nav>
     <section>
-        <div>
-            <img src="images/profile.jpg" alt="Profile picture">
-            <img src="images/profile_2.jpg" alt="Profile picture">
-        </div>
         <article>
             <p>Üdvözlöm az oldalamon, a nevem Lipták Zsolt. Kályha- és kemenceépítéssel foglalkozom.</p>
-            <p>Legyen rajta legalább két nagyobb kép.
-                Legyen rajta elhelyezve három box egymás mellett egy sorban, mindegyikben emeld ki a bemutatkozó egy-egy jó tulajdonságát.</p>
-        </article>
-        <article>
-            <p>Ne használj CSS keretrendszereket (Bootstrap), a formázásokat saját CSS fájllal oldd meg. Először minden legyen elkészítve és csak utána foglalkozz a design elemekkel.
-                A LEGFONTOSABB: amit nem határoztunk meg, abban szabad kezed van. Például színek, stílus, nem meghatározott elrendezések.</p>
         </article>
     </section>
+    <section>
+        <p>Legyen rajta elhelyezve három box egymás mellett egy sorban, mindegyikben emeld ki a bemutatkozó egy-egy jó tulajdonságát.</p>
+        <div class="content">
+            <header>
+                <h3>Precízitás</h3>
+            </header>
+        </div>
+        <div class="content">
+            <header>
+                <h3>Megbízhatóság</h3>
+            </header>
+        </div>
+        <div class="content">
+            <header>
+                <h3>Minőségi munkák</h3>
+            </header>
+        </div>
+    </section>
     <footer>
-        <p>A footerben legyen egy gomb, ami visszavisz a felső menühöz.   A láblécben legyen egy gomb, ami kattintásra visszavisz az oldal tetejére.</p>
+        <a href="#top">
+            <button class="btn">Ugrás az oldal tetejére</button>
+        </a>
     </footer>
   </body>
 </html>
