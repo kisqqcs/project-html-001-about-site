@@ -4,15 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-    <header id="header">
-        <h1>Magamról</h1>
+    <header>
+        <nav class="navbar">
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <div class="navbar-links">
+                <ul>
+                    <li> <a href="/index.html">Főoldal</a> </li>
+                    <li> <a href="/works.html">Munkáim</a> </li>
+                    <li> <a href="/gallery.html">Képgaléria</a> </li>
+                    <li> <a href="/about.html">Magamról</a> </li>
+                </ul>
+            </div>
+        </nav>
     </header>
-    <nav>
-
-    </nav>
-    <main>
+    <main class="wrapper">
+        <section class="inner">
+            <article class="content">
+                <p>5 éve foglalkozom különböző kályhák, kültéri kemencék és
+                    sütőhelyek építésével Békés megyében. 
+                </p>
+            </article>
+        </section>
 
     </main>
     <section>
@@ -28,6 +47,20 @@
             Üzenet (legalább 20 karakter hosszú legyen.
             (Opcionális) Helytelen adatok esetén ne lehessen az űrlapot elküldeni.</p>
     </H3>
+    <div class="container">
+        <form action="/action_page.php">
+          <label for="fname">Vezetéknév</label>
+          <input type="text" id="fname" name="firstname" placeholder="Vezetékneve..">
+      
+          <label for="lname">Keresztnév</label>
+          <input type="text" id="lname" name="lastname" placeholder="Keresztneve..">
+                    
+          <label for="subject">Üzenet</label>
+          <textarea id="subject" name="subject" placeholder="Ide írja az üzenetet.." style="height:200px"></textarea>
+      
+          <input type="submit" value="Submit">
+        </form>
+      </div>
     <footer>
         <a href="#top">
             <button class="btn">Ugrás az oldal tetejére</button>
