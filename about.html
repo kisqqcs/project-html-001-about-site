@@ -8,60 +8,53 @@
 </head>
 <body>
     <header>
-        <nav class="navbar">
-            <div class="navbar-links">
-                <ul>
-                    <li> <a href="/index.html">Főoldal</a> </li>
-                    <li> <a href="/works.html">Munkáim</a> </li>
-                    <li> <a href="/gallery.html">Képgaléria</a> </li>
-                    <li> <a href="/about.html">Magamról</a> </li>
-                </ul>
-            </div>
-        </nav>
+        <h3>Magamról</h3>
     </header>
-    <main class="wrapper">
-        <section class="inner">
-            <article class="content">
-                <p>5 éve foglalkozom különböző kályhák, kültéri kemencék és
-                    sütőhelyek építésével Békés megyében. 
-                </p>
+    <nav id="navbar">
+        <ul>
+            <li> <a href="/index.html">Főoldal</a> </li>
+            <li> <a href="/works.html">Munkáim</a> </li>
+            <li> <a href="/gallery.html">Képgaléria</a> </li>
+            <li> <a href="/about.html">Magamról</a> </li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <aside class="profile-image">
+                <img src="/images/profile.jpg" alt="Én" height="640" width="480">
+            </aside>
+            <article class="bio">
+                <h4>Elsődleges profilok</h4>
+                <ul>
+                    <li>Kültéri kemence</li>
+                    <li>Kültéri sütő</li>
+                    <li>Beltéri csempekályha</li>
+                </ul>
+
+                <h4>Helyszínek</h4>
+                <ol>
+                    <li>Békéscsaba</li>
+                    <li>Kétegyháza</li>
+                    <li>Mezőkovácsháza</li>
+                </ol>
             </article>
         </section>
-
+        <section>
+            <form action="" class="message-form">
+                <div class="form-group"><label for="name">Név</label>
+                    <input type="text" minlength="5" min="5" class="form-control" required></div>
+                <div class="form-group"><label for="email">Email</label>
+                    <input type="email" class="form-control" required></div>
+                <div class="form-group"><label for="message"Üzenet></label>
+                    <textarea minlength="20" class="form-control" required></textarea>
+                </div>
+                <button type="submit">Küldés</button>
+            </form>
+        </section>
     </main>
-    <section>
-
-    </section>
-    <H3>
-             <p>About: ezen az oldalon legyen egy hosszabb bemutatkozás, de itt is elég 5-10 mondat. 
-            Helyezz el egy nagyobb képet magadról (vagy arról akit bemutatsz) az oldal bal felső sarkában.
-            Mit csináltam eddig, mik az erősségeim, mi a hobbim, milyen nyelveket beszélek. Használd a megfelelő HTML elemeket a felsorolásokhoz, legyen benne számmal, ponttal való felsorolás is. 
-            Az oldal alján legyen egy űrlap, amin keresztül üzenetet tudnak neked küldeni. Az adatokat ellenőrizni is kell, az alábbiak szerint:
-            Név (legalább 5 karakter hosszú és nem lehet üres).
-            Email (valid email címnek kell lennie).
-            Üzenet (legalább 20 karakter hosszú legyen.
-            (Opcionális) Helytelen adatok esetén ne lehessen az űrlapot elküldeni.</p>
-    </H3>
-    <div class="container">
-        <form action="/action_page.php">
-          <label for="fname">Vezetéknév</label>
-          <input type="text" minlength="3" id="fname" name="firstname" placeholder="Vezetékneve..">
-      
-          <label for="lname">Keresztnév</label>
-          <input type="text" minlength="3" id="lname" name="lastname" placeholder="Keresztneve..">
-
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" placeholder="Email címe...">
-                    
-          <label for="subject">Üzenet</label>
-          <textarea id="subject" minlength="20" name="subject" placeholder="Ide írja az üzenetet.." style="height:200px"></textarea>
-      
-          <input type="submit" value="Submit">
-        </form>
-      </div>
     <footer>
-        <a href="#top">
-            <button class="button">Ugrás az oldal tetejére</button>
+         <a href="#navbar">
+        <button class="button">Ugrás az oldal tetejére</button>
         </a>
     </footer>
 </body>
