@@ -9,11 +9,6 @@
 <body>
     <header>
         <nav class="navbar">
-            <a href="#" class="toggle-button">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </a>
             <div class="navbar-links">
                 <ul>
                     <li> <a href="/index.html">Főoldal</a> </li>
@@ -50,21 +45,24 @@
     <div class="container">
         <form action="/action_page.php">
           <label for="fname">Vezetéknév</label>
-          <input type="text" id="fname" name="firstname" placeholder="Vezetékneve..">
+          <input type="text" minlength="3" id="fname" name="firstname" placeholder="Vezetékneve..">
       
           <label for="lname">Keresztnév</label>
-          <input type="text" id="lname" name="lastname" placeholder="Keresztneve..">
+          <input type="text" minlength="3" id="lname" name="lastname" placeholder="Keresztneve..">
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Email címe...">
                     
           <label for="subject">Üzenet</label>
-          <textarea id="subject" name="subject" placeholder="Ide írja az üzenetet.." style="height:200px"></textarea>
+          <textarea id="subject" minlength="20" name="subject" placeholder="Ide írja az üzenetet.." style="height:200px"></textarea>
       
           <input type="submit" value="Submit">
         </form>
       </div>
     <footer>
         <a href="#top">
-            <button class="btn">Ugrás az oldal tetejére</button>
+            <button class="button">Ugrás az oldal tetejére</button>
         </a>
-    </footer> 
+    </footer>
 </body>
 </html>
